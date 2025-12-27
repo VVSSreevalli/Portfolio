@@ -485,8 +485,3 @@ form button { width: max-content; }
 }
 
 
-.resume-embed iframe {
-  width: 100%;
-  height: 750px;
-  border-radius: 12px;
-}
