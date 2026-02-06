@@ -77,3 +77,7 @@ function showSuccess(msg){
     successBanner.style.display = 'block';
     setTimeout(()=>{ successBanner.style.display = 'none'; }, 4000);
 }
+
+const progressBars = document.querySelectorAll(".progress-bar");
+
+

@@ -362,3 +362,52 @@ footer {
     height: 220px;
   }
 }
+
+/* PROGRESS BAR BASE */
+.progress {
+  width: 100%;
+  height: 8px;
+  background: #1f253a;
+  border-radius: 10px;
+  position: relative;
+  overflow: visible;
+}
+
+/* BAR */
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--accent), #7ae3ff);
+  border-radius: 10px;
+  position: relative;
+  transition: width 1s ease;
+}
+
+/* ROUND DOT AT END */
+.progress-bar .dot {
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(79, 209, 255, 0.8);
+}
+
+/* PERCENT TEXT */
+.progress-bar .percent {
+  position: absolute;
+  right: -38px;
+  top: -22px;
+  font-size: 0.75rem;
+  color: var(--accent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* SHOW % ON HOVER */
+.skill:hover .percent {
+  opacity: 1;
+}
