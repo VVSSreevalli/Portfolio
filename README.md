@@ -9,7 +9,7 @@ This repository contains my personal portfolio showcasing selected projects in w
 - **Dog vs Cat** – CNN-based image classification project  
 
 ## Tech Stack
-HTML, CSS, JavaScripe 
+HTML, CSS, JavaScript, EmailJS 
 
 ## Purpose
 To present my skills, projects, and practical experience in a structured and accessible format.
