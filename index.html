@@ -3,384 +3,715 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>V V S Sreevalli | Portfolio</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
+  <!-- BACKGROUND ORBS -->
+  <div class="gradient-orb orb-1"></div>
+  <div class="gradient-orb orb-2"></div>
 
   <!-- NAVBAR -->
   <header>
+
     <nav class="nav">
-      <div class="logo">V V S Sreevalli</div>
+
+      <div class="logo">
+        V V S Sreevalli
+      </div>
+
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Achievements</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
+      <!-- THEME TOGGLE -->
+      <button id="themeToggle" class="theme-toggle">
+        ☾
+      </button>
+
     </nav>
+
   </header>
 
   <!-- HERO -->
   <section class="hero" id="about">
-    <div class="hero-visual" data-animate>
-    <img src="assets/images/My-Portrait.jpg" alt="Portrait placeholder">
-    </div>
-    <div class="hero-text" data-animate>
-    <h1>Hi, I’m <span>Venkata Sai Sreevalli Vobbilisetty</span></h1>
-    <h2>AI & Machine Learning Student . Frontend Developer · Aspiring Full-Stack Engineer </h2>
-    <p>
-      I'm a B.Tech student passionate about front-end development and AI applications, building 
-      clean and accessible web experiences. Currently exploring Python,
-      DSA, and full-stack development to create meaningful and innovative 
-      projects.
-      I build clean, functional, and user-focused web applications with
-      a strong foundation in frontend development and growing backend skills.
-    </p>
 
-    <div class="hero-buttons">
-      <a href="assets/resume/Venkata_Sai_Sreevalli_Vobbilisetty_Resume.pdf" download class="btn primary">Resume</a>
-      <a href="https://github.com/VVSSreevalli" target="_blank" aria-label="GitHub" class="btn">GitHub</a>
-      <a href="https://www.linkedin.com/in/vvs-sreevalli-13358b34a/" target="_blank" aria-label="LinkedIn" class="btn">LinkedIn</a>
+    <div class="hero-content">
+
+      <!-- LEFT -->
+      <div class="hero-text">
+
+        <p class="hero-tag">
+          AI & ML Student • Frontend Developer
+        </p>
+
+        <h1>
+          Hi, I’m 
+          <span class="hero-name">
+            Venkata Sai Sreevalli Vobbilisetty
+          </span> <br> <br>
+        </h1>
+
+        <p class="hero-description">
+          I'm Venkata Sai Sreevalli Vobbilisetty, a B.Tech AIML student
+          passionate about frontend development, AI systems,
+          and creating immersive digital experiences.
+
+          Currently exploring full-stack development,
+          machine learning, and scalable system design while building
+          projects that blend creativity with functionality.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            href="assets/resume/Venkata_Sai_Sreevalli_Vobbilisetty_Resume.pdf"
+            download
+            class="btn primary-btn"
+          >
+            Resume
+          </a>
+
+          <a
+            href="https://github.com/VVSSreevalli"
+            target="_blank"
+            class="btn secondary-btn"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/vvs-sreevalli-13358b34a/"
+            target="_blank"
+            class="btn secondary-btn"
+          >
+            LinkedIn
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="hero-visual">
+
+        <div class="hero-image-wrapper">
+
+          <img
+            src="assets/images/My-Portrait.jpg"
+            alt="Sreevalli Portrait"
+          >
+
+        </div>
+
+      </div>
+
     </div>
-    </div>
+
   </section>
-
-  <!-- EDUCATION -->
-<section id="education">
-  <h2 class="section-title">Education</h2>
-  <div class="grid">
-    <div class="card" data-animate>
-      <h3>B.Tech - AIML</h3>
-      <p><strong>University:</strong> Malla Reddy University</p>
-      <p><strong>Year:</strong> 2024 - Present</p>
-      <p><strong>CGPA (2nd Sem) </strong> 9.14</p>
-    </div>
-
-    <div class="card" data-animate>
-      <h3>Board of Intermediate- MPC</h3>
-      <p><strong>College:</strong> Narayana Junior College</p>
-      <p><strong>Year:</strong> 2022 – 2024</p>
-      <p><strong>Percentage: </strong> 97% </p>
-    </div>
-
-    <div class="card" data-animate>
-      <h3>Central Board of Education- 10th</h3>
-      <p><strong>School:</strong> St. Martins High School</p>
-      <p><strong>Year:</strong> 2022</p>
-      <p><strong>Percentage: </strong>82 %</p>
-    </div>
-  </div>
-</section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-  <h2 class="section-title">Skills</h2>
-
-  <div class="grid">
-    <!-- Frontend -->
-    <div class="card">
-      <h3>Frontend</h3>
-
-      <div class="skill">
-        <span>HTML</span>
-        <div class="progress">
-          <div class="progress-bar" style="width: 95%">
-            <span class="percent">95%</span>
-            <span class="dot"></span>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="skill">
-        <span>CSS</span>
-        <div class="progress">
-          <div class="progress-bar" style="width: 90%">
-            <span class="percent">90%</span>
-            <span class="dot"></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <span>JavaScript</span>
-        <div class="progress">
-          <div class="progress-bar" style="width: 80%">
-            <span class="percent">80%</span>
-            <span class="dot"></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <span>React (Learning) </span>
-        <div class="progress">
-          <div class="progress-bar" style="width: 30%">
-            <span class="percent">30%</span>
-            <span class="dot"></span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!-- Backend -->
-    <div class="card">
-      <h3>Backend</h3>
-
-      <div class="skill">
-        <span>Python (Learning)</span>
-        <div class="progress">
-          <div class="progress-bar" style="width: 40%">
-            <span class="percent">40%</span>
-            <span class="dot"></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <span>SQL (Learning)</span>
-        <div class="progress">
-          <div class="progress-bar" style="width: 50%">
-            <span class="percent">50%</span>
-            <span class="dot"></span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="card">
-      <h3>Version Control</h3>
-
-      <div class="skill">
-        <span>Git and GitHub</span>
-        <div class="progress">
-          <div class="progress-bar" style="width: 40%">
-            <span class="percent">80%</span>
-            <span class="dot"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 
   <!-- PROJECTS -->
   <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <!-- <img src="assets/images/desi-bites.jpg" alt="Project thumbnail"> -->
-        <div class="project-body">
-        <h3>Desi Bites (Restaurant)</h3>
-        <p>A responsive restaurant website built using HTML, CSS, and JavaScript, featuring menu browsing, 
-            search functionality, and cart interactions. Designed with a clean UI and mobile-friendly layout to ensure 
-            smooth user experience across devices. Focused on structured layout, interactivity, and real-world frontend 
-            behaviour.</p>
-        <p class="tech">HTML · CSS · JavaScript</p>
-        <div class="project-links">
-        <a href="https://github.com/VVSSreevalli/Desi-Bites" target="_blank" rel="noopener" class="btn small">GitHub Repo</a>
-        <a href="https://vvssreevalli.github.io/Desi-Bites/" target="_blank" rel="noopener" class="btn small ghost">Live Demo</a>
-        </div>
-        </div>
-      </div>
 
-      <div class="card">
-        <!-- <img src="assets/images/GameX.jpg" alt="Project thumbnail"> -->
-        <div class="project-body">
-        <h3>GameX (Game Merchandise E-platform)</h3>
-        <p>A front-end e-commerce style website developed using HTML, CSS, and JavaScript for showcasing gaming merchandise. 
-            Includes product listings, category-based layout, and interactive UI elements. Emphasises clean design, usability,
-            and scalable structure with planned backend integration.</p>
-             <p class="tech">HTML · CSS · JavaScript </p>
-        <div class="project-links">
-        <a href="https://github.com/VVSSreevalli/GameX" target="_blank" rel="noopener" class="btn small">GitHub Repo</a>
-        <a href="https://vvssreevalli.github.io/GameX/" target="_blank" rel="noopener" class="btn small ghost">Live Demo</a>
-        </div>
-        </div>
-      </div>
+    <h2 class="section-title">
+      Featured Projects
+    </h2>
 
-      <div class="card">
-        <!-- <img src="assets/images/LoanPrediction.jpg" alt="Project thumbnail"> -->
-        <div class="project-body">
-        <h3>Loan Prediction Modal using ML </h3>
-        <p>A machine learning project that predicts loan approval status based on applicant data such as income, credit 
-            history, and education. Implemented using Python and machine learning algorithms, with data preprocessing, 
-            model training, and evaluation to analyse prediction accuracy. Built to understand practical applications of ML 
-            in financial decision-making.</p>
-             <p class="tech">Python</p>
-        <div class="project-links">
-        <a href="https://github.com/VVSSreevalli/Loan-Prediction-ML.git" target="_blank" rel="noopener" class="btn small">GitHub Repo</a>
-        </div>
-        </div>
-      </div>
+    <div class="projects-container">
 
-      <div class="card">
-        <!-- <img src="assets/images/catvsdog.jpg" alt="Project thumbnail"> -->
-        <div class="project-body">
-        <h3>Cat vs Dog (Image Classifier) Model </h3>
-        <p>A deep learning model developed to classify images as dogs or cats using Convolutional Neural Networks (CNNs). 
+      <!-- PROJECT 1 -->
+      <article class="project-card">
+
+        <div class="project-content">
+
+          <div class="project-text">
+
+            <p class="project-label">
+              Frontend Development
+            </p>
+
+            <h3>
+              Desi Bites
+            </h3>
+
+            <p>
+              A responsive restaurant website built using HTML,
+              CSS, and JavaScript featuring dynamic menu browsing,
+              search functionality, and cart interactions.
+
+              Designed with clean UI principles and responsive layouts
+              for smooth cross-device experiences.
+            </p>
+
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+
+              <a
+                href="https://github.com/VVSSreevalli/Desi-Bites"
+                target="_blank"
+                class="btn small-btn"
+              >
+                GitHub
+              </a>
+
+              <a
+                href="https://vvssreevalli.github.io/Desi-Bites/"
+                target="_blank"
+                class="btn small-btn ghost-btn"
+              >
+                Live Demo
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="project-visual">
+
+            <img
+              src="assets/images/DesiBites.png"
+              alt="Desi Bites Preview"
+            >
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- PROJECT 2 -->
+      <article class="project-card reverse">
+
+        <div class="project-content">
+
+          <div class="project-text">
+
+            <p class="project-label">
+              E-Commerce UI
+            </p>
+
+            <h3>
+              GameX
+            </h3>
+
+            <p>
+              A gaming merchandise storefront built with
+              HTML, CSS, and JavaScript featuring interactive UI,
+              product sections, and responsive layouts.
+
+              Structured for future backend and database integration.
+            </p>
+
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+
+              <a
+                href="https://github.com/VVSSreevalli/GameX"
+                target="_blank"
+                class="btn small-btn"
+              >
+                GitHub
+              </a>
+
+              <a
+                href="https://vvssreevalli.github.io/GameX/"
+                target="_blank"
+                class="btn small-btn ghost-btn"
+              >
+                Live Demo
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="project-visual">
+
+            <img
+              src="assets/images/GameX.png"
+              alt="GameX Preview"
+            >
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- PROJECT 3 -->
+      <article class="project-card">
+
+        <div class="project-content">
+
+          <div class="project-text">
+
+            <p class="project-label">
+              Machine Learning
+            </p>
+
+            <h3>
+              Loan Prediction Model
+            </h3>
+
+            <p>
+              A machine learning project that predicts loan approval
+              using applicant financial and educational data.
+
+              Included preprocessing, training, and model evaluation
+              workflows using Python ML libraries.
+            </p>
+
+            <div class="tech-stack">
+              <span>Python</span>
+              <span>Machine Learning</span>
+            </div>
+
+            <div class="project-links">
+
+              <a
+                href="https://github.com/VVSSreevalli/Loan-Prediction-ML.git"
+                target="_blank"
+                class="btn small-btn"
+              >
+                GitHub
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="project-visual">
+
+            <img
+              src="assets/images/LoanPrediction.png"
+              alt="Loan Prediction Preview"
+            >
+
+          </div>
+
+        </div>
+
+      </article>
+
+            <!-- PROJECT 4 -->
+      <article class="project-card reverse">
+
+        <div class="project-content">
+
+          <div class="project-text">
+
+            <p class="project-label">
+              Machine Learning
+            </p>
+
+            <h3>
+              Cat vs Dog (Image Classifier) Model 
+            </h3>
+
+            <p>
+            A deep learning model developed to classify images as dogs or cats using Convolutional Neural Networks (CNNs). 
             Implemented with Python and deep learning frameworks, involving image preprocessing, model training, and 
-            performance evaluation. Helped build hands-on understanding of computer vision and neural network workflows</p>
-          <p class="tech">Python </p>
-        <div class="project-links">
-        <a href="https://github.com/VVSSreevalli/-Cats-vs-Dogs-Image-Classifier-ML.git" target="_blank" rel="noopener" class="btn small">GitHub Repo</a>
+            performance evaluation. Helped build hands-on understanding of computer vision and neural network workflows
+            </p>
+
+            <div class="tech-stack">
+              <span>Python</span>
+              <span>Machine Learning</span>
+            </div>
+
+            <div class="project-links">
+
+              <a
+                href="https://github.com/VVSSreevalli/-Cats-vs-Dogs-Image-Classifier-ML.git"
+                target="_blank"
+                class="btn small-btn"
+              >
+                GitHub
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="project-visual">
+
+            <img
+              src="assets/images/CatsvsDogs.png"
+              alt="CatsvsDogs Preview"
+            >
+
+          </div>
+
         </div>
-        </div>
-      </div>
+
+      </article>
+
+    </div>
 
   </section>
 
-  <!-- CERTIFICATES -->
-  <section id="certifications">
-    <h2 class="section-title">Certifications</h2>
-    <div class="grid">
-        <article class="cert-card" data-animate>
-        <a href="assets/certs/Operating System Fundamentals.pdf" target="_blank" rel="noopener">
-        <img src="assets/images/Operating Systems certificate.png" alt="NPTEL Certificate">
-        <h3>NPTEL — Operating System Fundamentals</h3>
-        </a>
-        </article>
+  <!-- SKILLS -->
+  <section id="skills">
 
+    <h2 class="section-title">
+      Skills & Technologies
+    </h2>
 
-        <article class="cert-card" data-animate>
-        <a href="assets/certs/HTML and CSS Foundation Certification.pdf" target="_blank" rel="noopener">
-        <img src="assets/images/HTML and CSS Foundation certificate.png" alt="Springboard Certificate">
-        <h3>Infosys Springboard — HTML and CSS</h3>
-        </a>
-        </article>
+    <div class="skills-cloud">
 
-        <article class="cert-card" data-animate>
-        <a href="assets/certs/TechA JavaScript Fundamentals Certification.pdf" target="_blank" rel="noopener">
-        <img src="assets/images/JavaScript Foundation certificate.png" alt="Springboard Certificate">
-        <h3>Infosys Springboard — JavaScript</h3>
-        </a>
-        </article>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Python</span>
+      <span>SQL</span>
+      <span>Git</span>
+      <span>GitHub</span>
+      <span>Machine Learning</span>
+      <span>Frontend Development</span>
+      <span>Responsive Design</span>
+      <span>UI Design</span>
 
-        <article class="cert-card" data-animate>
-        <a href="assets/certs/Programming Fundamentals using Python - Part 1- 081215.pdf" target="_blank" rel="noopener">
-        <img src="assets/images/Python Certification .png" alt="Springboard Certificate">
-        <h3>TCS ion — Communication Skills</h3>
-        </a>
-        </article>
-
-        <article class="cert-card" data-animate>
-        <a href="assets/certs/Communication.pdf" target="_blank" rel="noopener">
-        <img src="assets/images/Communication skills certificate.png" alt="Springboard Certificate">
-        <h3>TCS ion — Communication Skills</h3>
-        </a>
-        </article>
-
-        <article class="cert-card" data-animate>
-        <a href="assets/certs/SoftSkills.pdf" target="_blank" rel="noopener">
-        <img src="assets/images/Soft Skills Certificate.png" alt="Springboard Certificate">
-        <h3>TCS ion — Soft Skills</h3>
-        </a>
-        </article>
-
-        <article class="cert-card" data-animate>
-        <a href="assets/certs/English C1 certificate.pdf" target="_blank" rel="noopener">
-        <img src="assets/images/C1 english certificate.png" alt="C1 Certificate">
-        <h3>Cambridge — C1 English Certificate</h3>
-        </a>
-        </article>
-
-        <article class="cert-card" data-animate>
-        <a href="assets/certs/SQL.pdf" target="_blank" rel="noopener">
-        <img src="assets/images/SQL.png" alt="C1 Certificate">
-        <h3>Scalar Topics — SQL Certification</h3>
-        </a>
-        </article>
-
-        <article class="cert-card" data-animate>
-        <a href="assets/certs/Git and GitHub for Developers.pdf" target="_blank" rel="noopener">
-        <img src="assets/images/Git and GitHub.png" alt="Git and GitHub Certificate">
-        <h3>Infosys Springboard — Git and GitHub Certificate</h3>
-        </a>
-        </article>
-
-        <article class="cert-card" data-animate>
-        <a href="assets/certs/Python Full Stack.pdf" target="_blank" rel="noopener">
-        <img src="assets/images/Python full stack .png" alt="Python Full Stack Certificate">
-        <h3>Edu Skills — Python Full Stack Certification </h3>
-        </a>
-        </article>
     </div>
+
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+
+    <h2 class="section-title">
+      Education
+    </h2>
+
+    <div class="education-grid">
+
+      <div class="edu-card">
+
+        <h3>B.Tech — AIML</h3>
+
+        <p>Malla Reddy University</p>
+
+        <span>2024 - Present</span>
+
+        <h4>CGPA: 9.14</h4>
+
+      </div>
+
+      <div class="edu-card">
+
+        <h3>Intermediate — MPC</h3>
+
+        <p>Narayana Junior College</p>
+
+        <span>2022 – 2024</span>
+
+        <h4>97%</h4>
+
+      </div>
+
+      <div class="edu-card">
+
+        <h3>CBSE — 10th</h3>
+
+        <p>St. Martins High School</p>
+
+        <span>2022</span>
+
+        <h4>82%</h4>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+
+    <h2 class="section-title">
+      Achievement Vault
+    </h2>
+
+    <div class="stack-wrapper">
+
+      <article class="cert-card">
+
+        <div class="cert-content">
+          <h3>NPTEL — Operating System Fundamentals</h3>
+        </div>
+
+        <img
+          src="assets/images/Operating Systems certificate.png"
+          alt="Operating Systems Certificate"
+        >
+
+      </article>
+
+      <article class="cert-card">
+
+        <div class="cert-content">
+          <h3>Infosys Springboard — HTML & CSS</h3>
+        </div>
+
+        <img
+          src="assets/images/HTML and CSS Foundation certificate.png"
+          alt="HTML CSS Certificate"
+        >
+
+      </article>
+
+      <article class="cert-card">
+
+        <div class="cert-content">
+          <h3>Infosys Springboard — JavaScript</h3>
+        </div>
+
+        <img
+          src="assets/images/JavaScript Foundation certificate.png"
+          alt="JavaScript Certificate"
+        >
+
+      </article>
+
+      <article class="cert-card">
+
+        <div class="cert-content">
+          <h3>EduSkills — Python Full Stack</h3>
+        </div>
+
+        <img
+          src="assets/images/Python full stack .png"
+          alt="Python Full Stack"
+        >
+
+      </article>
+
+      <article class="cert-card">
+
+        <div class="cert-content">
+          <h3>TCS ion — Communication Skills</h3>
+        </div>
+
+        <img
+          src="assets/images/Communication skills certificate.png"
+          alt="TCS ion — Communication Skills"
+        >
+
+      </article>
+
+      <article class="cert-card">
+
+        <div class="cert-content">
+          <h3>TCS ion — Soft Skills</h3>
+        </div>
+
+        <img
+          src="assets/images/Soft Skills Certificate.png"
+          alt="TCS ion — Soft Skills"
+        >
+
+      </article>
+
+      <article class="cert-card">
+
+        <div class="cert-content">
+          <h3>Cambridge — C1 English Certificate</h3>
+        </div>
+
+        <img
+          src="assets/images/C1 english certificate.png"
+          alt="Cambridge — C1 English Certificate"
+        >
+
+      </article>
+
+      <article class="cert-card">
+
+        <div class="cert-content">
+          <h3>Scalar Topics — SQL Certification</h3>
+        </div>
+
+        <img
+          src="assets/images/SQL.png"
+          alt="Scalar Topics — SQL Certification"
+        >
+
+      </article>
+
+      <article class="cert-card">
+
+        <div class="cert-content">
+          <h3>Infosys Springboard — Git and GitHub Certificate</h3>
+        </div>
+
+        <img
+          src="assets/images/Git and GitHub.png"
+          alt="Infosys Springboard — Git and GitHub Certificate"
+        >
+
+      </article>
+
+
+
+    </div>
+
   </section>
 
   <!-- EXPERIENCE -->
   <section id="experience">
-    <h2 class="section-title">Experience</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>AI & ML Intern — InternLink</h3>
-        <p>Worked on real-world AI/ML tasks and applied theoretical concepts.</p>
+
+    <h2 class="section-title">
+      Experience Journey
+    </h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <span>2025</span>
+
+          <h3>AI & ML Intern — InternLink</h3>
+
+          <p>
+            Worked on practical AI/ML tasks and explored
+            real-world implementation workflows.
+          </p>
+
+        </div>
+
       </div>
+
     </div>
+
   </section>
 
   <!-- CONTACT -->
   <section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <p class="muted">Prefer email? <a href="mailto:your.email@example.com">your.email@example.com</a></p>
 
-    <div id="successBanner" class="success-banner">Your message was sent successfully!</div>
-    <div id="errorBanner" class="error-banner">Please fill all fields correctly.</div>
+    <div class="contact-container">
 
-    <form id="contactForm">
-    <div class="form-row">
-    <label for="name">Name</label>
-    <input id="name" name="name" >
-    </div>
-    <div class="form-row">
-    <label for="email">Email</label>
-    <input id="email" name="email" type="email" >
-    </div>
-    <div class="form-row">
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="6" ></textarea>
-    </div>
-    <div class="form-row">
-    <button type="submit" class="btn" id="submitBtn">
-        <span class="btn-text">Send Message</span>
-        <span class="loader"></span>
-    </button>
-    </div>
-    </form>
+      <div class="contact-text">
+
+        <p class="contact-tag">
+          Let’s Connect
+        </p>
+
+        <h2>
+          Got an idea?
+          Let’s build something unforgettable.
+        </h2>
+
+      </div>
+
+      <div class="contact-form-wrapper">
+
+        <div id="successBanner" class="success-banner"></div>
+
+        <div id="errorBanner" class="error-banner"></div>
+
+        <form id="contactForm">
+
+          <div class="form-row">
+
+            <label for="name">Name</label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+            >
+
+          </div>
+
+          <div class="form-row">
+
+            <label for="email">Email</label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+            >
+
+          </div>
+
+          <div class="form-row">
+
+            <label for="message">Message</label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+            ></textarea>
+
+          </div>
+
+          <button type="submit" class="btn" id="submitBtn">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
 
     </div>
 
-    <div class="contact-socials">
-        <a href="https://github.com/VVSSreevalli" target="_blank" aria-label="GitHub">
-            <img src="assets/images/github.png" alt="GitHub">
-        </a>
-        <a href="https://www.linkedin.com/in/vvs-sreevalli-13358b34a/" target="_blank" aria-label="LinkedIn">
-            <img src="assets/images/linkedin.png" alt="LinkedIn">
-        </a>
-    </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2026 Sreevalli. Built with focus.</p>
+
+    <p>
+      Designed & Developed by V V S Sreevalli
+    </p>
+
   </footer>
 
   <!-- JS -->
-  <script src="script.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
-emailjs.init("rAwc4NQ0Srs7Zv-gY");
+emailjs.init({
+    publicKey: "rAwc4NQ0Srs7Zv-gY",
+});
 </script>
+
+<script src="script.js"></script>
 
 </body>
 </html>
