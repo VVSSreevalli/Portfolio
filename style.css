@@ -687,142 +687,47 @@ body.light-mode .project-content{
    CERTIFICATION STACK
 ========================= */
 
-.stack-wrapper{
-
-    width:100%;
-    max-width:650px;
-    margin:auto;
-
-    position:relative;
-
-    padding-top:40px;
-
-    /* gives room for last card */
-    padding-bottom: 10vh;
-
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
 
-.cert-card{
-
-    position:sticky;
-    top:120px;
-
-    background:var(--card);
-
-    border-radius:24px;
-
-    overflow:hidden;
-
-    border:1px solid rgba(255,255,255,0.08);
-
-    box-shadow:
-    0 20px 50px rgba(0,0,0,0.35);
-
-    transition:0.35s ease;
-
-    /* IMPORTANT */
-    margin-bottom:-10px;
-
+/* CARDS */
+.card, .cert-card {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.cert-card img{
-
-    width:100%;
-    display:block;
-
+.card:hover, .cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(79,209,255,0.3);
 }
 
-.cert-content{
-    padding:1rem;
+.card h3, .cert-card h3 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
 }
 
-.cert-content h3{
-
-    text-align:center;
-    font-size:1rem;
-
+.card p, .cert-card p {
+  color: var(--muted);
+  margin-bottom: 0.5rem;
 }
 
-/* =========================
-   TIMELINE
-========================= */
 
-.timeline{
-
-  position:relative;
-
-  margin-top:2rem;
-
+.cert-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
 }
 
-.timeline::before{
-
-  content:"";
-
-  position:absolute;
-
-  left:20px;
-  top:0;
-
-  width:2px;
-  height:100%;
-
-  background:
-    linear-gradient(
-      var(--primary),
-      var(--secondary)
-    );
-
-}
-
-.timeline-item{
-
-  position:relative;
-
-  padding-left:4.5rem;
-
-  margin-bottom:3rem;
-
-}
-
-.timeline-dot{
-
-  position:absolute;
-
-  left:10px;
-
-  width:20px;
-  height:20px;
-
-  border-radius:50%;
-
-  background:var(--secondary);
-
-  box-shadow:
-    0 0 20px rgba(6,182,212,0.5);
-
-}
-
-.timeline-content{
-
-  padding:1.8rem;
-
-  border-radius:24px;
-
-  background:var(--card);
-
-  border:1px solid var(--border);
-
-  backdrop-filter:blur(16px);
-
-}
-
-.timeline-content span{
-  color:var(--secondary);
-}
-
-.timeline-content h3{
-  margin:0.8rem 0;
+.cert-card img {
+  height: 180px;
 }
 
 /* =========================
